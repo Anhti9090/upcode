@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPTIME</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>UPTIME</h1>
+
+    <div id="addlink">
+      <h2>Thêm liên kết</h2>
+      <form id="addlinkform">
+        <input type="text" id="newlinkinput" placeholder="Nhập URL" required>
+        <button type="submit">Thêm</button>
+      </form>
+    </div>
+
+    <div id="deletelink">
+      <h2>Xóa liên kết</h2>
+      <form id="deletelinkform">
+        <input type="text" id="linktodelete" placeholder="Nhập URL" required>
+        <button type="submit">Xóa</button>
+      </form>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
